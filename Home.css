@@ -1,0 +1,387 @@
+:root {
+  --head-bg: url(https://cdn.discordapp.com/attachments/834375218646351875/992150289832489081/header-gradient.jpg);
+}
+
+#manga-search-3 > div {
+  border: 0px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #000;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: #9d9d9d;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/*   slides   */
+body.text-ui-light .popular-slider .slider__container .slider__item .item__wrap,
+.slider__thumb_item.c-image-hover {
+  border-radius: 5px;
+  background-color: #191919;
+}
+body > div.wrap > div > div.c-sidebar.c-bottom-sidebar {
+  background-color: #19192047 !important;
+}
+
+body.text-ui-light
+  .popular-slider
+  .slider__container
+  .slider__item
+  .item__wrap {
+  background: var(--head-bg);
+  background-size: cover;
+  background-position: 30% 100%;
+  background-repeat: no-repeat;
+  transition: all 1s ease-in-out;
+}
+body.text-ui-light
+  .popular-slider
+  .slider__container
+  .slider__item
+  .item__wrap:hover {
+  background-position: 0% 100%;
+  scale: 1.05;
+}
+
+/*------------- buttons -------------------- */
+.popular-slider
+  .slider__container
+  .slider__item
+  .slider__content
+  .slider__content_item
+  .chapter-item
+  .chapter
+  a,
+body.page.text-ui-light
+  .c-page-content
+  .c-page
+  .c-page__content
+  .page-content-listing
+  .page-listing-item
+  .page-item-detail
+  .item-summary
+  .list-chapter
+  .chapter-item
+  .chapter
+  a {
+  background-color: #2f2f2fa1;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-out;
+  padding: 1em;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+body.page.text-ui-light
+  .c-page-content
+  .c-page
+  .c-page__content
+  .page-content-listing
+  .page-listing-item
+  .page-item-detail
+  .item-summary
+  .list-chapter
+  .chapter-item
+  .chapter
+  a::before {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  background: #6098ff;
+  display: block;
+  -webkit-transform-origin: right top;
+  -ms-transform-origin: right top;
+  transform-origin: right top;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+  transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+}
+
+body.page.text-ui-light
+  .c-page-content
+  .c-page
+  .c-page__content
+  .page-content-listing
+  .page-listing-item
+  .page-item-detail
+  .item-summary
+  .list-chapter
+  .chapter-item
+  .chapter
+  a:hover::before {
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+.popular-slider
+  .slider__container
+  .slider__item
+  .slider__content
+  .slider__content_item
+  .chapter-item
+  .chapter
+  a:hover,
+body.page.text-ui-light
+  .c-page-content
+  .c-page
+  .c-page__content
+  .page-content-listing
+  .page-listing-item
+  .page-item-detail
+  .item-summary
+  .list-chapter
+  .chapter-item
+  .chapter
+  a:hover {
+  background-color: #007ffd5e;
+}
+
+body.text-ui-light .popular-slider .slider__container .slick-arrow {
+  background-color: #2f2f2fa1;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-out;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  justify-content: center;
+}
+
+body.text-ui-light .popular-slider .slider__container .slick-arrow:hover {
+  background-color: #007ffd5e;
+}
+
+/*
+body.page .c-page-content .c-page .c-page__content .page-content-listing .page-listing-item .page-item-detail .item-summary .list-chapter .chapter-item {
+	display: flex;
+}
+body.page .c-page-content .c-page .c-page__content .page-content-listing .page-listing-item .page-item-detail .item-summary .list-chapter .chapter-item:has(.chapter a:hover) .post-on {
+	max-height: 100%;
+}
+body.page .c-page-content .c-page .c-page__content .page-content-listing .page-listing-item .page-item-detail .item-summary .list-chapter .chapter-item .post-on {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.5s ease-out;
+}
+*/
+/*------------- buttons -------------------- */
+/* Hide icon in heading */
+.c-blog__heading.style-2.font-heading > h1 > i {
+  display: none;
+}
+
+/* Center heading and add padding */
+.c-blog__heading.style-2.font-heading > h1 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+/* Style widgets */
+body.text-ui-light .widget:not(.default):not(.background) > .c-widget-wrap,
+body.text-ui-light .widget.c-popular .popular-item-wrap,
+body.text-ui-light .widget .my-history .my-history-item-wrap {
+  border-color: #0000;
+  border-width: thin;
+  background-color: transparent;
+}
+
+/* Style page content listing */
+body.page.text-ui-light
+  .c-page-content
+  .c-page
+  .c-page__content
+  .page-content-listing
+  .page-listing-item
+  .page-item-detail
+  .item-summary
+  .list-chapter
+  .chapter-item
+  .chapter,
+body.page.text-ui-light
+  .c-page-content
+  .c-page
+  .c-page__content
+  .page-content-listing
+  .page-listing-item
+  .page-item-detail
+  .item-summary
+  .list-chapter
+  .chapter-item
+  .chapter:hover {
+  border-color: #0000;
+  border-width: thin;
+  background-color: transparent;
+  padding: 0;
+}
+
+/* Position custom badge */
+.manga-title-badges.custom {
+  position: absolute;
+}
+
+/* Style widget heading */
+.widget-heading {
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* Center widget heading in block 4 */
+#block-4 .widget-content h3 {
+  text-align: center;
+}
+
+/* Style recent manga thumbnails */
+#manga-recent-7
+  > div
+  > div
+  > div.widget-content
+  > div
+  > div.popular-img.widget-thumbnail.c-image-hover {
+  border-radius: 4px;
+}
+
+/* Style main menu links */
+div.main-menu > ul li a::before {
+  background: #e2dfdbbf !important;
+}
+
+/* Style search form input */
+.site-header .search-main-menu form input[type="text"],
+.site-header .search-main-menu form input[type="submit"] {
+  border-radius: 4px;
+}
+
+/* Center loop content horizontally */
+#loop-content > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style profile manga summary */
+body
+  > div.wrap
+  > div
+  > div.site-content
+  > div
+  > div.profile-manga.summary-layout-1 {
+  background-image: linear-gradient(
+    0deg,
+    rgba(106, 100, 100, 0.13769257703081228) 0%,
+    rgba(0, 0, 0, 1) 22%
+  ) !important;
+}
+
+/* Style sub header nav */
+body.text-ui-light .site-header .c-sub-header-nav.with-border {
+  border-bottom-color: none !important;
+}
+
+/* Remove pseudo-element before span */
+#loop-content > div > div > div > div > div:before {
+  display: none;
+}
+
+/* Selectors with common properties grouped together */
+#loop-content > div > div > div > div > div > span.end,
+#loop-content > div > div > div > div > div > a > span.hot,
+.c-image-hover,
+#hover-infor {
+  border-radius: 4px;
+}
+
+#loop-content > div > div > div > div > div > span.end {
+  position: absolute;
+  -webkit-transform: rotate(0deg);
+  top: 0;
+  width: fit-content;
+  padding: 0.5rem;
+  left: 0;
+  right: 0;
+  border-radius: 0px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+#loop-content > div > div > div > div > div > a > span.hot {
+  border-radius: 0px;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 4px;
+  -webkit-transform: rotate(0deg);
+  left: -7px;
+}
+
+.site-header
+  .c-sub-header-nav
+  .c-sub-nav_wrap
+  .c-modal_item
+  .c-user_item
+  .c-user_menu {
+  right: -14rem;
+  border-top: 0.5px solid red;
+  border-bottom: 0.5px solid red !important;
+  border-radius: 4px;
+  background: #191919;
+}
+
+.site-header
+  .c-sub-header-nav
+  .c-sub-nav_wrap
+  .c-modal_item
+  .c-user_item
+  .c-user_menu
+  a {
+  color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  #hover-infor {
+    display: none;
+    pointer-events: none;
+    opacity: 0;
+  }
+}
+
+/* --------------------------------------------- */
